@@ -46,3 +46,9 @@ Running the script side_input_example.py yields the following log:
 ```
 As one can see the last enrichment fails because the file containing the relevant information is only updated to include the required data after the start of the pipeline.
 What would be the best solution to update the lookup collection after the start of the pipeline?
+
+# Other Questions
+## naive in memory cache in java
+We have implemented a naive in memory cache like in naive_in_memory_cache.java for one of our pipelines.
+Here the simple question is: considering beams execution model what is the best practice for developing such an in memory cache in the java sdk?
+Are there some things we did not consider? Did we shoot ourselves in the foot with that one, because it will come back to haunt us?
